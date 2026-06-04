@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('../KNN_heart.pkl')
-scaler = joblib.load('../scaler.pkl')
-expected_columns = joblib.load('../columns.pkl')
+joblib.load('KNN_heart.pkl')
+joblib.load('scaler.pkl')
+joblib.load('columns.pkl')
 
 st.title("Heart Disease Prediction")
 st.markdown("Provide the following details")
